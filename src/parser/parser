@@ -1,0 +1,11 @@
+import parser.parser_helper as ParserHelper
+
+class Parser:
+    def __init__(self):
+        self.parser_helper = ParserHelper()
+
+    def parse_user_input_for_llm(self, user_input):
+        return self.parser_helper.parse_user_input_for_llm(user_input)
+
+    def parse_llm_output_for_user(self, llm_output):
+        return self.parser_helper.parse_llm_output_for_user(llm_output)
